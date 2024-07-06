@@ -16,7 +16,7 @@ volumes:
 
 services:
   generator:
-    image: 'RuslanVdovinn/kafka-producer:latest'
+    image: 'ruslanvdovin/kafka-producer:latest'
     networks:
       - app
     depends_on:
@@ -27,7 +27,7 @@ services:
       - '8081:8081'
 
   analyser:
-    image: 'RuslanVdovinn/kafka-cosumer:latest'
+    image: 'ruslanvdovin/kafka-cosumer:latest'
     networks:
       - app
     depends_on:
